@@ -14,9 +14,17 @@ def path_finder():
     # picking up the 1st letter for each array element
     for i in input_data:
         node_letter = i[0]
-        temp_str = i.split()
-        temp_str = temp_str.pop(0)
-        if node_letter not in graph_dict:
+        # temp_str = i.split()
+        temp_str = i[1]+i[2]
+        print(temp_str)
+
+        if node_letter in graph_dict.keys():
+            graph_dict[node_letter].add(temp_str)
+        else:
             graph_dict[node_letter] = temp_str
 
-# https://www.geeksforgeeks.org/generate-graph-using-dictionary-python/
+    print(graph_dict)
+        # https://www.geeksforgeeks.org/generate-graph-using-dictionary-python/
+
+
+path_finder()
