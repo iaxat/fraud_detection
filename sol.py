@@ -17,22 +17,46 @@ def data_collector():
     # 1 ABC
     if 'A' in graph_dict.keys():
         for k in graph_dict['A']:
-            
             if 'B' in k:
                 list(k)
                 temp_cal += int(k[1])
-
                 if 'B' in graph_dict.keys():
-                    for k in graph_dict['B']:
-                        
+                    for k in graph_dict['B']:    
                         if 'C' in k:
                             list(k)
                             temp_cal += int(k[1])
+    print('Output 1. A-B-C ->',temp_cal)
 
-    print('Output 1. A-B-C',temp_cal)
 
-    
+    # 2. AD
+    temp_cal = 0
+    if 'A' in graph_dict.keys():
+        for k in graph_dict['A']:
             
+            if 'D' in k:
+                list(k)
+                temp_cal += int(k[1])
+    print('Output 2. A-D ->',temp_cal)
+
+
+    # 3. ADC
+    temp_cal = 0
+    if 'A' in graph_dict.keys():
+        for k in graph_dict['A']:
+            if 'D' in k:
+                list(k)
+                temp_cal += int(k[1])
+                if 'D' in graph_dict.keys():
+                    for k in graph_dict['D']:    
+                        if 'C' in k:
+                            list(k)
+                            temp_cal += int(k[1])
+    print('Output 3. A-D-C ->',temp_cal)
+
+
+
+
+
 
 
 data_collector()
