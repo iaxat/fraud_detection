@@ -1,3 +1,4 @@
+
 def pathfinder():
     
 
@@ -5,8 +6,19 @@ def pathfinder():
 
 
 
-def test_cases():
-    path = ['AB5', 'BC4', 'CD8', 'DC8', 'DE6', 'AD5', 'CE2', 'EB3', 'AE7']
-    city_dict = {}
+def test_cases_creator():
+
+    # creating test cases
+    # using user input
+
+    nodes_input = input('Number of Nodes Required')
+    
+
+
+
+
 
     pathfinder()
+
+
+# https://www.geeksforgeeks.org/generate-graph-using-dictionary-python/
