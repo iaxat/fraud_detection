@@ -29,16 +29,8 @@ def data_collector():
                         if 'C' in k:
                             list(k)
                             temp_cal += int(k[1])
-
-                        else:
-                            print("NA")
-                else:
-                    print("NA")            
-            else:
-                print("NA")
     else:
         print("NA")
-
     print('Output 1. A-B-C ->',temp_cal)
 
 
@@ -50,12 +42,8 @@ def data_collector():
             if 'D' in k:
                 list(k)
                 temp_cal += int(k[1])
-
-            else:
-                print("NA")
     else:
         print("NA")
-
     print('Output 2. A-D ->',temp_cal)
 
 
@@ -72,17 +60,9 @@ def data_collector():
                         if 'C' in k:
                             list(k)
                             temp_cal += int(k[1])
-
-                        else:
-                            print("NA")
-                else:
-                    print("NA")            
-            else:
-                print("NA")
     else:
         print("NA")
-
-    print('Output 1. A-D-C ->',temp_cal)
+    print('Output 3. A-D-C ->',temp_cal)
 
 
     # 4. AEBCD
@@ -92,23 +72,24 @@ def data_collector():
             if 'E' in k:
                 list(k)
                 temp_cal += int(k[1])
-
                 if 'E' in graph_dict.keys():
                     for k in graph_dict['E']:    
-                        if 'D' in k:
+                        if 'B' in k:
                             list(k)
                             temp_cal += int(k[1])
-
-                        else:
-                            print("NA")
-                else:
-                    print("NA")            
-            else:
-                print("NA")
+                            if 'B' in graph_dict.keys():
+                                for k in graph_dict['B']:    
+                                    if 'C' in k:
+                                        list(k)
+                                        temp_cal += int(k[1])
+                                        if 'C' in graph_dict.keys():
+                                            for k in graph_dict['C']:    
+                                                if 'D' in k:
+                                                    list(k)
+                                                    temp_cal += int(k[1])
     else:
         print("NA")
-
-    print('Output 1. A-E-D ->',temp_cal)
+    print('Output 4. A-E-B-C-D ->',temp_cal)
 
 
     # 5. AED
@@ -124,16 +105,14 @@ def data_collector():
                         if 'D' in k:
                             list(k)
                             temp_cal += int(k[1])
-
-                        else:
-                            print("NA")
-                else:
-                    print("NA")            
-            else:
-                print("NA")
     else:
         print("NA")
+    print('Output 5. A-E-D ->',temp_cal)
 
-    print('Output 1. A-E-D ->',temp_cal)
+
+
+    # 6. 
+
+
 
 data_collector()
