@@ -5,8 +5,6 @@ def data_collector():
     input_data = ['AB5', 'BC4', 'CD8', 'DC8', 'DE6', 'AD5', 'CE2', 'EB3', 'AE7']
     graph_dict = {'A':[],'B':[],'C':[],'D':[],'E':[]}
 
-    stops = 0
-
     for i in input_data:
         temp_str = i[1]+i[2]
         if i[0] in graph_dict:
@@ -87,9 +85,10 @@ def data_collector():
                                                 if 'D' in k:
                                                     list(k)
                                                     temp_cal += int(k[1])
-    else:
-        print("NA")
-    print('Output 4. A-E-B-C-D ->',temp_cal)
+                                                    print('Output 4. A-E-B-C-D ->',temp_cal)
+                                                else:
+                                                    print("NA")
+    
 
 
     # 5. AED
@@ -105,13 +104,17 @@ def data_collector():
                         if 'D' in k:
                             list(k)
                             temp_cal += int(k[1])
-    else:
-        print("NA")
-    print('Output 5. A-E-D ->',temp_cal)
+                            print('Output 5. A-E-D ->',temp_cal)
+                        else:
+                            print('Output 5. A-E-D -> not a solution')
 
 
 
-    # 6. 
+
+    # 6. Starting at C and ending at C
+    stops = 0
+    temp_cal = 0
+
 
 
 
