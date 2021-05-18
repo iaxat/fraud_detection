@@ -87,9 +87,8 @@ def data_collector():
                                                     temp_cal += int(k[1])
                                                     print('Output 4. A-E-B-C-D ->',temp_cal)
                                                 else:
-                                                    print("NA")
+                                                    print('Output 4. A-E-B-C-D -> no solution')
     
-
 
     # 5. AED
     temp_cal = 0
@@ -109,11 +108,18 @@ def data_collector():
                             print('Output 5. A-E-D -> not a solution')
 
 
-
-
     # 6. Starting at C and ending at C
     stops = 0
     temp_cal = 0
+    temp_arr = []
+
+    for l in graph_dict['C']:
+        if l[0] in graph_dict.keys():
+            for 
+            if graph_dict[l[0]] == 'C':
+                stops+=1
+                print('path_found')
+            else:
 
 
 
