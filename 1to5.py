@@ -1,8 +1,3 @@
-# testing of input data
-# testing of data arrangement
-
-from typing import SupportsRound
-
 
 def data_collector():
     input_data = ['AB5', 'BC4', 'CD8', 'DC8', 'DE6', 'AD5', 'CE2', 'EB3', 'AE7']
@@ -112,23 +107,7 @@ def data_collector():
 
 
     # 6. Starting at C and ending at C
-    graph_d = {'A': ['B', 'D', 'E'], 'B': ['C'], 'C': ['D', 'E'], 'D': ['C', 'E'], 'E': ['B']}
-    source = 'A'
-    if source is None or source not in graph_d:
-        return "Invalid input"
-    path = []
-    stack = [source]
-    while(len(stack) != 0):
-        s = stack.pop()
-        if s not in path:
-            path.append(s)
-        if s not in graph_d:
-            #leaf node
-            continue
-        for neighbor in graph_d[s]:
-            stack.append(neighbor)
-    print(path)
-    return " ".join(path)
+
 
 
 

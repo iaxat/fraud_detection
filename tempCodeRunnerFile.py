@@ -1,1 +1,1 @@
-temp_str = i.split()
+print(" ".join(path))
