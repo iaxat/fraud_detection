@@ -1,6 +1,6 @@
 graph = {'A': ['B', 'D', 'E'], 'B': ['C'], 'C': ['D', 'E'], 'D': ['C', 'E'], 'E': ['B']}
 
-source = 'B'
+source = 'C'
 path = []
 stack = [source]
 count = 0

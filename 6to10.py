@@ -1,3 +1,6 @@
+from os import WEXITSTATUS
+
+
 def recursive_dfs(graph, source,path = []):
 
     if source not in path:
@@ -15,8 +18,155 @@ def recursive_dfs(graph, source,path = []):
 
 graph = {'A': ['B', 'D', 'E'], 'B': ['C'], 'C': ['D', 'E'], 'D': ['C', 'E'], 'E': ['B']}
 
-path = recursive_dfs(graph, "C")
-print(" ".join(path))
+
 
 
 # 6. 
+source = 'C'
+path = recursive_dfs(graph, source)
+path_edit = path
+print(" ".join(path))
+temp_arr = []
+start = 0
+end = len(path_edit)-1
+ways = []
+if 'C' in path_edit:
+    while end > 0:
+        if path_edit[end] != source:
+            path_edit.pop()
+            print(path_edit)
+            end -= 1
+        if path_edit[end] == source:
+            temp_arr.append(end)
+            end -= 1
+
+    temp_arr = temp_arr[::-1]
+    print(temp_arr)
+    a = 0
+    
+        print(path[temp_arr[i]:temp_arr[i+1]])
+
+    print(ways)
+else:
+    print('so solution')
+
+
+
+# 7. Trips from A to C
+source = 'C'
+path = recursive_dfs(graph, source)
+path_edit = path
+print(" ".join(path))
+temp_arr = []
+start = 0
+end = len(path_edit)-1
+ways = []
+if 'C' in path_edit:
+    while end > 0:
+        if path_edit[end] != source:
+            path_edit.pop()
+            print(path_edit)
+            end -= 1
+        if path_edit[end] == source:
+            temp_arr.append(end)
+            end -= 1
+
+    temp_arr = temp_arr[::-1]
+    print(temp_arr)
+    a = 0
+    
+        print(path[temp_arr[i]:temp_arr[i+1]])
+
+    print(ways)
+else:
+    print('so solution')
+
+
+# 8. A to C shortest route
+source = 'C'
+path = recursive_dfs(graph, source)
+path_edit = path
+print(" ".join(path))
+temp_arr = []
+start = 0
+end = len(path_edit)-1
+ways = []
+if 'C' in path_edit:
+    while end > 0:
+        if path_edit[end] != source:
+            path_edit.pop()
+            print(path_edit)
+            end -= 1
+        if path_edit[end] == source:
+            temp_arr.append(end)
+            end -= 1
+
+    temp_arr = temp_arr[::-1]
+    print(temp_arr)
+    a = 0
+    
+        print(path[temp_arr[i]:temp_arr[i+1]])
+
+    print(ways)
+else:
+    print('so solution')
+
+
+# 9. B to B 
+source = 'C'
+path = recursive_dfs(graph, source)
+path_edit = path
+print(" ".join(path))
+temp_arr = []
+start = 0
+end = len(path_edit)-1
+ways = []
+if 'C' in path_edit:
+    while end > 0:
+        if path_edit[end] != source:
+            path_edit.pop()
+            print(path_edit)
+            end -= 1
+        if path_edit[end] == source:
+            temp_arr.append(end)
+            end -= 1
+
+    temp_arr = temp_arr[::-1]
+    print(temp_arr)
+    a = 0
+    
+        print(path[temp_arr[i]:temp_arr[i+1]])
+
+    print(ways)
+else:
+    print('so solution')
+
+
+# 10. C to C trips with distance less than 30
+source = 'C'
+path = recursive_dfs(graph, source)
+path_edit = path
+print(" ".join(path))
+temp_arr = []
+start = 0
+end = len(path_edit)-1
+ways = []
+if 'C' in path_edit:
+    while end > 0:
+        if path_edit[end] != source:
+            path_edit.pop()
+            print(path_edit)
+            end -= 1
+        if path_edit[end] == source:
+            temp_arr.append(end)
+            end -= 1
+
+    temp_arr = temp_arr[::-1]
+    print(temp_arr)
+    a = 0
+    
+        print(path[temp_arr[i]:temp_arr[i+1]])
+
+    print(ways)
+else:
+    print('so solution')

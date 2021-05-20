@@ -106,37 +106,4 @@ def data_collector():
                             print('Output 5. A-E-D -> not a solution')
 
 
-    # 6. Starting at C and ending at C
-
-
-
-
-
-
-
-
-    # 7. Trips from A to C
-
-
-
-
-
-
-
-
-    # 8. A to C shortest route
-
-
-
-
-
-
-    # 9. B to B 
-
-
-
-
-
-    # 10. C to C trips with distance less than 30
-
 data_collector()
