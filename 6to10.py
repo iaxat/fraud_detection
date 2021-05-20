@@ -65,7 +65,7 @@ else:
 
 
 # 8. A to C shortest route
-source = 'C'
+source = 'A'
 path = recursive_dfs(graph, source)
 path_edit = path
 print(" ".join(path))
@@ -89,7 +89,7 @@ else:
 
 
 # 9. B to B 
-source = 'C'
+source = 'B'
 path = recursive_dfs(graph, source)
 path_edit = path
 print(" ".join(path))
@@ -97,7 +97,7 @@ temp_arr = []
 start = 0
 end = len(path_edit)-1
 ways = []
-if 'C' in path_edit:
+if 'B' in path_edit:
     while end > 0:
         if path_edit[end] != source:
             path_edit.pop()
