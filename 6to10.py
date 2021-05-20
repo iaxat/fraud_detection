@@ -75,7 +75,7 @@ if 'C' in path_edit:
     print(temp_arr)
     a = 0
     
-        print(path[temp_arr[i]:temp_arr[i+1]])
+    print(path[temp_arr[i]:temp_arr[i+1]])
 
     print(ways)
 else:
@@ -105,7 +105,7 @@ if 'C' in path_edit:
     print(temp_arr)
     a = 0
     
-        print(path[temp_arr[i]:temp_arr[i+1]])
+    print(path[temp_arr[i]:temp_arr[i+1]])
 
     print(ways)
 else:
@@ -135,7 +135,7 @@ if 'C' in path_edit:
     print(temp_arr)
     a = 0
     
-        print(path[temp_arr[i]:temp_arr[i+1]])
+    print(path[temp_arr[i]:temp_arr[i+1]])
 
     print(ways)
 else:
@@ -165,7 +165,7 @@ if 'C' in path_edit:
     print(temp_arr)
     a = 0
     
-        print(path[temp_arr[i]:temp_arr[i+1]])
+    print(path[temp_arr[i]:temp_arr[i+1]])
 
     print(ways)
 else:
