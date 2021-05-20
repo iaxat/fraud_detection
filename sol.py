@@ -109,17 +109,33 @@ def data_collector():
 
 
     # 6. Starting at C and ending at C
-    stops = 0
-    temp_cal = 0
-    temp_arr = []
+    dfs_arr = []
 
-    for l in graph_dict['C']:
-        if l[0] in graph_dict.keys():
-            for 
-            if graph_dict[l[0]] == 'C':
-                stops+=1
-                print('path_found')
-            else:
+
+
+
+
+
+
+
+    # 7. Trips from A to C
+
+
+
+
+
+
+
+
+    # 8. A to C shortest route
+
+
+
+
+
+
+    # 9. C to C trips with distance less than 30
+
 
 
 
