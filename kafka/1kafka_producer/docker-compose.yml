@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  1kafkaproducer:
+    image: 1kafkaproducer
+    build:
+      context: .
+      dockerfile: ./Dockerfile
