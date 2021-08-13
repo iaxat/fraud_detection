@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  orcfileoperation:
+    image: orcfileoperation
+    build:
+      context: .
+      dockerfile: ./Dockerfile

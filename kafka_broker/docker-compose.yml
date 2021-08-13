@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  kafkabroker:
+    image: kafkabroker
+    build:
+      context: .
+      dockerfile: ./Dockerfile
